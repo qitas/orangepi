@@ -460,31 +460,31 @@ if [[ ${IGNORE_UPDATES} != yes ]]; then
 
 	if [[ ${BOARD} =~ orangepi4|orangepi4-lts|orangepi800 && $RELEASE =~ focal|buster|bullseye|bookworm ]]; then
 
-		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://github.com/orangepi-xunlong/rk-rootfs-build.git" "${EXTER}/cache/sources/rk-rootfs-build-${RELEASE}" "branch:rk-rootfs-build-${RELEASE}"
+		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://e.coding.net/xindex/sbc/rk-rootfs-build.git" "${EXTER}/cache/sources/rk-rootfs-build-${RELEASE}" "branch:rk-rootfs-build-${RELEASE}"
 
 	fi
 
 	if [[ ${BOARDFAMILY} == "rockchip-rk3588" && $RELEASE =~ bullseye|bookworm|focal|jammy ]]; then
 
-		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://github.com/orangepi-xunlong/rk-rootfs-build.git" "${EXTER}/cache/sources/rk3588_packages_${RELEASE}" "branch:rk3588_packages_${RELEASE}"
+		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://e.coding.net/xindex/sbc/rk-rootfs-build.git" "${EXTER}/cache/sources/rk3588_packages_${RELEASE}" "branch:rk3588_packages_${RELEASE}"
 
 	fi
 
 	if [[ ${BOARDFAMILY} == "rockchip-rk356x" && $RELEASE =~ bullseye|focal|jammy ]]; then
 
-		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://github.com/orangepi-xunlong/rk-rootfs-build.git" "${EXTER}/cache/sources/rk356x_packages" "branch:rk356x_packages"
+		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://e.coding.net/xindex/sbc/rk-rootfs-build.git" "${EXTER}/cache/sources/rk356x_packages" "branch:rk356x_packages"
 
 	fi
 
 	if [[ ${BOARD} =~ orangepi3|orangepi3-lts && $RELEASE =~ bullseye && $BRANCH == current ]]; then
 
-		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://github.com/orangepi-xunlong/rk-rootfs-build.git" "${EXTER}/cache/sources/ffmpeg_kodi_${RELEASE}" "branch:ffmpeg_kodi_${RELEASE}"
+		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://e.coding.net/xindex/sbc/rk-rootfs-build.git" "${EXTER}/cache/sources/ffmpeg_kodi_${RELEASE}" "branch:ffmpeg_kodi_${RELEASE}"
 
 	fi
 
 	if [[ ${BOARD} =~ orangepi4|orangepi4-lts|orangepi800 && $RELEASE =~ jammy && $BRANCH == next ]]; then
 
-		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://github.com/orangepi-xunlong/rk-rootfs-build.git" "${EXTER}/cache/sources/ffmpeg_kodi_${RELEASE}" "branch:ffmpeg_kodi_${RELEASE}"
+		[[ ${BUILD_OPT} == image ]] && fetch_from_repo "https://e.coding.net/xindex/sbc/rk-rootfs-build.git" "${EXTER}/cache/sources/ffmpeg_kodi_${RELEASE}" "branch:ffmpeg_kodi_${RELEASE}"
 
 	fi
 
